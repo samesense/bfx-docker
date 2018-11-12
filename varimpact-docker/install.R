@@ -1,4 +1,5 @@
 install.packages("devtools")
 devtools::install_github("ck37/varimpact")
 install.packages('arm')
+nstall.packages('ranger')
 q()

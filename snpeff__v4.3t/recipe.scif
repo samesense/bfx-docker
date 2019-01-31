@@ -1,20 +1,20 @@
-%appinstall snpEff__v3.4t
+%appinstall snpeff__v3.4t
     wget --quiet -O snpEff_v4_3t_core.zip http://downloads.sourceforge.net/project/snpeff/snpEff_v4_3t_core.zip
     unzip snpEff_v4_3t_core.zip -d ./
     rm snpEff_v4_3t_core.zip
-%appfiles snpEff__v4.3t
-%appenv snpEff__v4.3t
-    SNPEFF_HOME=/scif/apps/snpEff__v3.4t
+%appfiles snpeff__v4.3t
+%appenv snpeff__v4.3t
+    SNPEFF_HOME=/scif/apps/snpeff__v3.4t
     export SNPEFF_HOME
-%apphelp snpEff__v4.3t
+%apphelp snpeff__v4.3t
     SnpEff is a genomic variant annotation and functional effect predicction toolbox. More info here: http://snpeff.sourceforge.net.
     It is recommended to create the following alias:
     alias snpEff="singularity run --app snpEff__v3.4t \${SINGULARITY_CONTAINER}"
     More help is then available by running
     snpEff  --help
-%apprun snpEff__v4.3t
+%apprun snpeff__v4.3t
     snpEff "$@"
-%applabels snpEff__v4.3t
+%applabels snpeff__v4.3t
     MAINTAINER evansj 
     BUILD_VERSION 0.0.1
     WRAPPEDTOOL_VERSION 4.3t
